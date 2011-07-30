@@ -1,0 +1,278 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		97EEA49313E4810B0013FA5F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97EEA49213E4810B0013FA5F /* UIKit.framework */; };
+		97EEA49513E4810B0013FA5F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97EEA49413E4810B0013FA5F /* Foundation.framework */; };
+		97EEA49713E4810B0013FA5F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97EEA49613E4810B0013FA5F /* CoreGraphics.framework */; };
+		97EEA49D13E4810B0013FA5F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 97EEA49B13E4810B0013FA5F /* InfoPlist.strings */; };
+		97EEA49F13E4810B0013FA5F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 97EEA49E13E4810B0013FA5F /* main.m */; };
+		97EEA4A313E4810B0013FA5F /* EventsListerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 97EEA4A213E4810B0013FA5F /* EventsListerAppDelegate.m */; };
+		97EEA4A613E4810B0013FA5F /* EventsListerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97EEA4A513E4810B0013FA5F /* EventsListerViewController.m */; };
+		97EEA4A913E4810B0013FA5F /* EventsListerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97EEA4A713E4810B0013FA5F /* EventsListerViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		97EEA48E13E4810B0013FA5F /* EventsLister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventsLister.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97EEA49213E4810B0013FA5F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		97EEA49413E4810B0013FA5F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		97EEA49613E4810B0013FA5F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		97EEA49A13E4810B0013FA5F /* EventsLister-Info.plist */ = {isa = PBXFileReference; path = "EventsLister-Info.plist"; sourceTree = "<group>"; };
+		97EEA49C13E4810B0013FA5F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		97EEA49E13E4810B0013FA5F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		97EEA4A013E4810B0013FA5F /* EventsLister-Prefix.pch */ = {isa = PBXFileReference; path = "EventsLister-Prefix.pch"; sourceTree = "<group>"; };
+		97EEA4A113E4810B0013FA5F /* EventsListerAppDelegate.h */ = {isa = PBXFileReference; path = EventsListerAppDelegate.h; sourceTree = "<group>"; };
+		97EEA4A213E4810B0013FA5F /* EventsListerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventsListerAppDelegate.m; sourceTree = "<group>"; };
+		97EEA4A413E4810B0013FA5F /* EventsListerViewController.h */ = {isa = PBXFileReference; path = EventsListerViewController.h; sourceTree = "<group>"; };
+		97EEA4A513E4810B0013FA5F /* EventsListerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventsListerViewController.m; sourceTree = "<group>"; };
+		97EEA4A813E4810B0013FA5F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/EventsListerViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		97EEA48B13E4810B0013FA5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97EEA49313E4810B0013FA5F /* UIKit.framework in Frameworks */,
+				97EEA49513E4810B0013FA5F /* Foundation.framework in Frameworks */,
+				97EEA49713E4810B0013FA5F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		97EEA48313E4810B0013FA5F = {
+			isa = PBXGroup;
+			children = (
+				97EEA49813E4810B0013FA5F /* EventsLister */,
+				97EEA49113E4810B0013FA5F /* Frameworks */,
+				97EEA48F13E4810B0013FA5F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		97EEA48F13E4810B0013FA5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97EEA48E13E4810B0013FA5F /* EventsLister.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97EEA49113E4810B0013FA5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97EEA49213E4810B0013FA5F /* UIKit.framework */,
+				97EEA49413E4810B0013FA5F /* Foundation.framework */,
+				97EEA49613E4810B0013FA5F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		97EEA49813E4810B0013FA5F /* EventsLister */ = {
+			isa = PBXGroup;
+			children = (
+				97EEA4A113E4810B0013FA5F /* EventsListerAppDelegate.h */,
+				97EEA4A213E4810B0013FA5F /* EventsListerAppDelegate.m */,
+				97EEA4A413E4810B0013FA5F /* EventsListerViewController.h */,
+				97EEA4A513E4810B0013FA5F /* EventsListerViewController.m */,
+				97EEA4A713E4810B0013FA5F /* EventsListerViewController.xib */,
+				97EEA49913E4810B0013FA5F /* Supporting Files */,
+			);
+			path = EventsLister;
+			sourceTree = "<group>";
+		};
+		97EEA49913E4810B0013FA5F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				97EEA49A13E4810B0013FA5F /* EventsLister-Info.plist */,
+				97EEA49B13E4810B0013FA5F /* InfoPlist.strings */,
+				97EEA49E13E4810B0013FA5F /* main.m */,
+				97EEA4A013E4810B0013FA5F /* EventsLister-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		97EEA48D13E4810B0013FA5F /* EventsLister */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97EEA4AC13E4810B0013FA5F /* Build configuration list for PBXNativeTarget "EventsLister" */;
+			buildPhases = (
+				97EEA48A13E4810B0013FA5F /* Sources */,
+				97EEA48B13E4810B0013FA5F /* Frameworks */,
+				97EEA48C13E4810B0013FA5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EventsLister;
+			productName = EventsLister;
+			productReference = 97EEA48E13E4810B0013FA5F /* EventsLister.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		97EEA48513E4810B0013FA5F /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 97EEA48813E4810B0013FA5F /* Build configuration list for PBXProject "EventsLister" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 97EEA48313E4810B0013FA5F;
+			productRefGroup = 97EEA48F13E4810B0013FA5F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97EEA48D13E4810B0013FA5F /* EventsLister */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		97EEA48C13E4810B0013FA5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97EEA49D13E4810B0013FA5F /* InfoPlist.strings in Resources */,
+				97EEA4A913E4810B0013FA5F /* EventsListerViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		97EEA48A13E4810B0013FA5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97EEA49F13E4810B0013FA5F /* main.m in Sources */,
+				97EEA4A313E4810B0013FA5F /* EventsListerAppDelegate.m in Sources */,
+				97EEA4A613E4810B0013FA5F /* EventsListerViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		97EEA49B13E4810B0013FA5F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97EEA49C13E4810B0013FA5F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		97EEA4A713E4810B0013FA5F /* EventsListerViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97EEA4A813E4810B0013FA5F /* en */,
+			);
+			name = EventsListerViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		97EEA4AA13E4810B0013FA5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		97EEA4AB13E4810B0013FA5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		97EEA4AD13E4810B0013FA5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EventsLister/EventsLister-Prefix.pch";
+				INFOPLIST_FILE = "EventsLister/EventsLister-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		97EEA4AE13E4810B0013FA5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EventsLister/EventsLister-Prefix.pch";
+				INFOPLIST_FILE = "EventsLister/EventsLister-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		97EEA48813E4810B0013FA5F /* Build configuration list for PBXProject "EventsLister" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97EEA4AA13E4810B0013FA5F /* Debug */,
+				97EEA4AB13E4810B0013FA5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97EEA4AC13E4810B0013FA5F /* Build configuration list for PBXNativeTarget "EventsLister" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97EEA4AD13E4810B0013FA5F /* Debug */,
+				97EEA4AE13E4810B0013FA5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 97EEA48513E4810B0013FA5F /* Project object */;
+}
