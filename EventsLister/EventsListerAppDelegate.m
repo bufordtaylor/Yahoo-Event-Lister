@@ -7,21 +7,45 @@
 //
 
 #import "EventsListerAppDelegate.h"
-
+#import "CustomMBProgressHUD.h"
 #import "EventsListerViewController.h"
 
 @implementation EventsListerAppDelegate
 
-@synthesize window = _window;
-@synthesize viewController = _viewController;
+@synthesize window;
+@synthesize viewController;
+
+#define kHUDHideDelay 0.5;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    CustomMBProgressHUD *hud = (CustomMBProgressHUD*)[[MBProgressHUD alloc] initWithWindow:window];
+    hud.minShowTime = kHUDHideDelay;
+    hud.animationType = MBProgressHUDAnimationZoom;
+    
+    if(
+	   getenv("NSZombieEnabled") || getenv("NSAutoreleaseFreedObjectCheckEnabled")
+	   ) {
+		DLog(@"NSZombieEnabled/NSAutoreleaseFreedObjectCheckEnabled enabled!");
+	}
+    
+    [CustomMBProgressHUD setDefaultHUD:hud];
+    
+    viewController = [[EventsListerViewController alloc] initWithStyle:UITableViewStylePlain]; 
+    // Reveal main application
+    viewController.view.backgroundColor = [UIColor clearColor];
+    
+    nav = [[UINavigationController alloc] initWithRootViewController:viewController];
+    [window insertSubview:nav.view belowSubview:[CustomMBProgressHUD defaultHUD]];    
+    
+    [window addSubview:[CustomMBProgressHUD defaultHUD]];    
+    
     // Override point for customization after application launch.
-    self.viewController = [[EventsListerViewController alloc] initWithNibName:@"EventsListerViewController" bundle:nil]; 
-    self.window.rootViewController = self.viewController;
-    [self.window makeKeyAndVisible];
+//    self.viewController = [[EventsListerViewController alloc] initWithNibName:@"EventsListerViewController" bundle:nil]; 
+    DLog(@"appdidfinishlaunching");
+    [window makeKeyAndVisible];
     return YES;
 }
 

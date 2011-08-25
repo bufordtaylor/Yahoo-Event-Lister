@@ -10,10 +10,13 @@
 
 @class EventsListerViewController;
 
-@interface EventsListerAppDelegate : UIResponder <UIApplicationDelegate>
+@interface EventsListerAppDelegate : UIResponder <UIApplicationDelegate> {
+    EventsListerViewController *viewController;
+    UIWindow *window;
+    UINavigationController* nav;
+}
 
 @property (strong, nonatomic) UIWindow *window;
-
 @property (strong, nonatomic) EventsListerViewController *viewController;
 
 @end
